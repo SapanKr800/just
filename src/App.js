@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import ReactPlayer from "react-player";
 import './App.css';
-
+import Popup from 'reactjs-popup';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+   <h1 >Hi </h1>
+
+
+
+    <Popup trigger={<button className="button"> Open Modal </button>} modal>
+    <div> 
+      
+    <ReactPlayer
+              url="https://www.youtube.com/watch?v=GQ0PzxV2p9k"
+              playing={true}
+            />
+       </div>
+  </Popup>
     </div>
   );
 }
+
+
+  
 
 export default App;
